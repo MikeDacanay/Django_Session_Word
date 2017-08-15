@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	</title>
+</head>
+<body>
+	<div>
+		<h1>Add a new word</h1>
+		<form action="/add" method="POST">
+			{% csrf_token %}
+			<input type="text" name="word_form"><br>
+			Choose Color
+			<br>Red<input type="radio" value="Red">
+			<br>Green<input type="radio" value="Green">
+			<br>Blue<input type="radio" value="Blue">
+			<br><input type="checkbox"> show in BIG fonts!<br>
+			<input type="submit" value="Add to Session">
+		</form>
+	<div>
+</body>
+</html>
